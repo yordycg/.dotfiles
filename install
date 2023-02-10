@@ -1,4 +1,0 @@
-rm -rf ~/.config/alacrityy
-
-ln -srv alacritty ~/.config
-
