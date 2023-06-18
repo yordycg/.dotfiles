@@ -1,3 +1,4 @@
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -8,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="lukerandall"
+ZSH_THEME="nanotech"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,9 +71,7 @@ ZSH_THEME="lukerandall"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions z zsh-syntax-highlighting)
-
- 
+plugins=(git zsh-autosuggestions z zsh-syntax-highlighting web-search copypath)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,18 +96,67 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias zshcfg="nvim  ~/.zshrc"
-alias so="source ~/.zshrc"
-alias aty="nvim ~/.config/alacritty/alacritty.yml"
-alias py="python3"
-alias at="alacritty-themes"
-#
-# 
-fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# Aliases
+alias zshrc="nvim ~/.zshrc"
+alias omz="nvim ~/.oh-my-zsh"
+alias atyconf="nvim /mnt/c/Users/yordyPc/AppData/Roaming/alacritty/alacritty.yml"
+alias nv="nvim"
+alias so="source ~/.zshrc"
+alias py="python3"
+alias dev="cd /mnt/c/Users/yordyPC/Escritorio2/Cursos-Yordy/00\ -\ Cursos\ Programacion"
+alias win="cd /mnt/c/Users/yordyPC"
+alias cl="clear"
+alias x="exit"
+alias findd="ls ~/ | grep $1"
+alias cafe="cat /dev/random | hexdump | grep \"ca fe\""
+alias bat="batcat" # instalar desde 'bat/github'
+
+# Alias dev
+# NodeJS
+alias npmd="npm run dev"
+alias npms="npm start"
+alias rmnpmi="rm -rf node_modules && npm cache clean --force && npm i"
+alias djrs="python3 manage.py runserver"
+alias bwsy="browser-sync start --browser 'firefox' --server --directory --files '**/'"
+# logo-ls (icons terminal)
+alias ls='logo-ls'
+alias la='logo-ls -A'
+alias ll='logo-ls -al'
+# equivalents with Git Status on by Default
+alias lsg='logo-ls -D'
+alias lag='logo-ls -AD'
+alias llg='logo-ls -alD'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion 
+
+# Config exa (ls style)
+# if [ -x "$(command -v exa)" ]; then
+#   alias ls="exa --icons -l"
+#   alias la="exa --all --group --icons"
+#   alias lla="exa --long --all --group --icons"
+#   alias lt="exa --tree --icons"
+# fi
+
+# Remove colors - zsh tab completion
+zstyle ':completion:*' list-colors 
+
+# Config nvim
+NVIM_BEGINNER=~/.config/nvim-beginner
+export NVIM_BEGINNER
+# Lunar nvim
+export PATH="$HOME/.local/bin":$PATH
+
+alias nvb='XDG_DATA_HOME=$NVIM_BEGINNER/share XDG_CONFIG_HOME=$NVIM_BEGINNER nvim'
+
+# Starship prompt initiation
+eval "$(starship init zsh)"
+
+# Helix editor
+HELIX_RUNTIME=/home/user-name/src/helix/runtime
+
+# Home - initiation
+cd
