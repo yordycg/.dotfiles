@@ -38,6 +38,7 @@ require("lazy").setup({
   dependencies = { "nvim-tree/nvim-web-devicons" },
   opts = {
   },
+  -- ERROR LUALINE, NO FUNCIONA EN ESTA CONF
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
