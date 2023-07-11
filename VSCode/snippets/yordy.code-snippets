@@ -1,0 +1,51 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+
+  "Mostrar console.log": {
+    "scope": "javascript, typescript",
+    "prefix": "cl",
+    "body": ["console.log(  );"],
+    "description": "Mostrar console.log en la consola..."
+  },
+  "Mostrar console.error": {
+    "scope": "javascript, typescript",
+    "prefix": "cle",
+    "body": ["console.error( 'Error $1:', ${2:error} );"],
+    "description": "Mostrar console.log en la consola..."
+  },
+  "Importar modulos 1": {
+    "scope": "javascript, typescript",
+    "prefix": "imp1",
+    "body": ["import {${2:values}} from '${1:specifier}';", "$0"],
+    "description": "Import statement specific"
+  },
+  "Importar modulos 2": {
+    "scope": "javascript, typescript",
+    "prefix": "imp2",
+    "body": ["import ${2:values} from '${1:specifier}';", "$0"],
+    "description": "Import statement"
+  },
+  "Leetcode resolucion de problemas": {
+    "scope": "javascript, typescript, c++, python",
+    "prefix": "leet",
+    "body": [
+      "/* Leetcode\n1- Leer y entender el problema\n2- Proponer una solucion\n\t2.1- Validarlo (prueba de escritorio)\n3- Implementarlo (JavaScript)\n4- Refactorizar\n5- Ver otras soluciones y sacar conclusiones\n*/\n\n$2"
+    ],
+    "description": "Mostrar el paso a paso, para resolver problemas..."
+  }
+}

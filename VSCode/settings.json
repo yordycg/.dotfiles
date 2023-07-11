@@ -1,0 +1,236 @@
+// ! CONFIG VS CODE --------------------------
+{
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "security.workspace.trust.untrustedFiles": "open",
+  "screencastMode.verticalOffset": 5,
+  "editor.minimap.enabled": false,
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.editor.showTabs": true, // ! NO MOSTRAR LAS PESTAÑAS
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.guides.indentation": false,
+  "editor.wordWrap": "on",
+  "editor.guides.bracketPairs": "active",
+  "indenticator.width": 1,
+  "indenticator.color.dark": "rgba(255, 255, 255, 0.1)",
+  "todohighlight.exclude": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map",
+    "**/.next/**"
+  ],
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules/**",
+    "**/vendor/**",
+    "**/bower_components/**",
+    "**/dist/**"
+  ],
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords": [
+    {
+      "text": "TODO",
+      "color": "#333",
+      "backgroundColor": "#2ecc71"
+    },
+    {
+      "text": "FIXME",
+      "color": "#333",
+      "backgroundColor": "#e67e22"
+    },
+    {
+      "text": "BUG",
+      "color": "#333",
+      "backgroundColor": "#e74c3c"
+    }
+  ],
+  "vsicons.dontShowNewVersionMessage": true,
+  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  // "liveServer.settings.AdvanceCustomBrowserCmdLine": "/mnt/c/Program Files/Google/Chrome/Application/chrome.exe", // ! live server para wsl ubuntu
+  "liveServer.settings.CustomBrowser": "chrome",
+  "prettier.printWidth": 110,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorBlinking": "expand",
+  "window.commandCenter": true,
+  "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.option"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.fastScrollSensitivity": 3,
+  "terminal.integrated.env.linux": {},
+  "hediet.vscode-drawio.resizeImages": null,
+  "window.titleBarStyle": "custom",
+
+  // Apparence
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "synthwave84.brightness": 0.45,
+  "vscode_custom_css.imports": [
+    "C://Users.yordyPC/.vscode/extensions/robbowen.synthwave-vscode-0.1.15/synthwave84.css"
+  ],
+  "vscode_custom_css.policy": true,
+  "explorer.decorations.badges": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "explorer.compactFolders": false,
+  "editor.renderWhitespace": "all",
+
+  "workbench.list.horizontalScrolling": true,
+  "editor.bracketPairColorization.enabled": true,
+
+  // Fonts
+  "editor.fontFamily": "'CaskaydiaCove NF' /* 'MonoLisa', 'Dank Mono', 'Operator Mono', 'Roboto Mono', 'Hasklig', 'Victor Mono', 'JetBrainsMono NFM', 'FiraCode NFM', 'Hack Nerd Font Mono', 'CaskaydiaCove NF', 'Cascadia Code', 'SFMono Nerd Font'*/",
+  "editor.fontSize": 16,
+  // "editor.fontWeight": "normal",
+  "editor.fontLigatures": true,
+  "editor.letterSpacing": 1,
+  // "editor.lineHeight": 2,
+  "terminal.integrated.fontFamily": "'CaskaydiaCove NF'",
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.lineHeight": 1,
+  "terminal.integrated.fontSize": 17,
+  "screencastMode.fontSize": 20,
+
+  //
+  "git.openRepositoryInParentFolders": "always",
+  "editor.matchBrackets": "never",
+  "editor.glyphMargin": false,
+  "template-string-converter.addBracketsToProps": true,
+  "editor.formatOnSave": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "symbols.hidesExplorerArrows": false,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "vscode-edge-devtools.webhint": false,
+  "console-ninja.featureSet": "Pro",
+  "rapidapi.terminalLink.enabled": true,
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Terminal
+  "editor.lineHeight": 1.8,
+  "editor.minimap.scale": 2,
+  "workbench.editor.pinnedTabSizing": "compact",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+
+  // VSCode Performance
+  "editor.codeLens": false,
+  "breadcrumbs.enabled": false,
+  "search.searchOnType": false,
+  "terminal.integrated.gpuAcceleration": "on",
+  "editor.minimap.autohide": true,
+  "editor.minimap.showSlider": "always",
+  "vim.startInInsertMode": true,
+
+  // Others
+  "editor.lineNumbers": "relative",
+  "zenMode.hideLineNumbers": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.linkedEditing": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.ignoreRecommendations": false,
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": true,
+    "source.organizeImports": true
+    // "source.removeUnused": true
+  },
+
+  // VIM Commands
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.sneak": true,
+  "vim.foldfix": true,
+  "vim.easymotionMarkerBackgroundColor": "#020202",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
+  "vim.highlightedyank.textColor": "white",
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["leader", "i"],
+      "commands": ["extension.toggleBool"]
+    },
+    // {
+    //   "before": ["leader", "w"],
+    //   "commands": [":w!"]
+    // },
+    // {
+    //   "before": ["leader", "q"],
+    //   "commands": ["workbench.action.closeWindow"]
+    // },
+    // {
+    //   "before": ["leader", "s"],
+    //   "commands": [":vsp"]
+    // },
+    {
+      "before": ["leader", "k"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["leader", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prevInFiles"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.nextInFiles"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<tab>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["S-tab"],
+      "commands": ["workbench.action.previousEditor"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  // Others
+  "prettier.singleQuote": true,
+  "explorer.fileNesting.enabled": true,
+  "[handlebars]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "oneDarkPro.italic": false,
+  "workbench.activityBar.visible": false
+}
